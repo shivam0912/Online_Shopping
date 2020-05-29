@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardBackgroundColor="@color/colorBlack"
+    app:cardCornerRadius="10dp">
+
+    <LinearLayout
+        android:id="@+id/product_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/product_image"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="#FFFFFF"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/water_bottle"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/product_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:text="Bisleri 20 Ltr. Water"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/product_stock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+            android:paddingLeft="10dp"
+            android:text="Stock : InStock"
+            android:textColor="#76FF03"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/product_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+            android:paddingLeft="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/Rs"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
